@@ -11,7 +11,7 @@
     		if(!empty($pp_facebook_url))
     		{
     	?>
-    	<li class="facebook"><a <?php if(!empty($tg_topbar_social_link)) { ?>target="_blank"<?php } ?> href="<?php echo esc_url($pp_facebook_url); ?>"><i class="fa fa-facebook"></i></a></li>
+    	<li class="facebook"><a <?php if(!empty($tg_topbar_social_link)) { ?>target="_blank"<?php } ?> href="<?php echo esc_url($pp_facebook_url); ?>"><i class="fa fa-facebook-square"></i></a></li>
     	<?php
     		}
     	?>
