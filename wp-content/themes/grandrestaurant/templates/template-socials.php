@@ -135,6 +135,6 @@
 		<?php
 		    }
 		?>
-        <li class="bigoven"><a href="http://www.bigoven.com/"><i class="fa fa-cutlery"></i></a></li>
+        <li class="bigoven"><a target="_blank" href="http://www.bigoven.com/"><i class="fa fa-cutlery"></i></a></li>
     </ul>
 </div>
