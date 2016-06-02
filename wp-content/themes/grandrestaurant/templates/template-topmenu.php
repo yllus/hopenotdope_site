@@ -59,7 +59,7 @@ elseif(is_home())
 	    	    if(!empty($tg_menu_contact_address))
 	    	    {	
 	    	?>
-	    	    <span id="top_contact_address"><i class="fa fa-envelope"></i><?php echo esc_html($tg_menu_contact_address); ?></span>
+	    	    <span id="top_contact_address"><i class="fa fa-envelope"></i><a href="mailto:<?php echo esc_attr($tg_menu_contact_address); ?>"><?php echo esc_html($tg_menu_contact_address); ?></a></span>
 	    	<?php
 	    	    }
 	    	?>
