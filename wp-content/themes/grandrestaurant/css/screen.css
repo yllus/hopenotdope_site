@@ -4810,7 +4810,7 @@ h5.menu_post
 
 .menu_content_classic .post_detail.menu_excerpt
 {
-	width: calc(100% - 75px);
+	//width: calc(100% - 75px);
 }
 
 .slider_wrapper.portfolio ul.slides li .portfolio_slider_desc .post_detail.menu_excerpt
