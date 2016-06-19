@@ -55,6 +55,7 @@ include (get_template_directory() . "/lib/customizer.lib.php");
 
 //Setup page custom fields and action handler
 require_once (get_template_directory() . "/fields/page.fields.php");
+require_once (get_template_directory() . "/fields/post.fields.php");
 
 //Setup content builder
 require_once (get_template_directory() . "/modules/content_builder.php");
