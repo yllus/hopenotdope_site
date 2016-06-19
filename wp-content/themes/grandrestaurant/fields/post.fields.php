@@ -14,7 +14,7 @@ function post_display_event_information_callback( $post ) {
     <p>
         <label for="event_cost">Event Cost</label>
         <br>
-        <input type="text" name="event_cost" id="event_cost" value="<?php echo esc_attr($event_price); ?>" style="width: 97%">
+        <input type="text" name="event_cost" id="event_cost" value="<?php echo esc_attr($event_cost); ?>" style="width: 97%">
     </p>
     <p>
         <label for="event_date">Event Date</label>

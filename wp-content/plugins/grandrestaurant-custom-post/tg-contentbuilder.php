@@ -3594,10 +3594,15 @@ function ppb_blog_minimal_func($atts, $content) {
 				$return_html.= '<div class="featured_image" style="background-image:url(\''.$image_thumb[0].'\');"></div>';
 				$return_html.= '<div class="background_overlay"></div>';
 			}
+
+			$values = get_post_custom( $ppb_post->ID );
+		    $event_cost = isset( $values['event_cost'] ) ? $values['event_cost'][0] : '';
+		    $event_date = isset( $values['event_date'] ) ? $values['event_date'][0] : '';
 			
 			$return_html.= '<div class="content">';
 			$return_html.= '<h4>'.get_the_title($ppb_post->ID).'</h4>';
-			$return_html.= '<div class="post_detail">'.get_the_time(THEMEDATEFORMAT, $ppb_post->ID).'</div>';
+			$return_html.= '<div class="post_detail" style="bottom: 20px;">' . $event_cost . '</div>';
+			$return_html.= '<div class="post_detail">' . $event_date . '</div>';
 		    $return_html.= '</div>';
 		    $return_html.= '</div>';
 		    $return_html.= '</a>';
