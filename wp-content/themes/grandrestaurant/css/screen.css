@@ -2864,7 +2864,7 @@ ul.children .comment:first-child
 
 #page_caption.hasbg
 {
-	height: 70%;
+	height: 250px !important;
 	position: relative;
 	top: 0;
 	right: 0;
