@@ -3000,7 +3000,7 @@ ul.children .comment:first-child
 
 .ppb_title
 {
-	font-size: 50px;
+	font-size: 57px !important;
 	margin-top: 0;
 	letter-spacing: 0;
 	font-weight: 400;
@@ -3013,7 +3013,7 @@ ul.children .comment:first-child
 	display: block;
 	font-family: 'Kristi', 'Times New Roman', Georgia, Times,serif;
 	font-style: italic;
-	font-size: 70px;
+	font-size: 80px !important;
 	text-transform: none;
 	top: 0;
 	position: relative;
