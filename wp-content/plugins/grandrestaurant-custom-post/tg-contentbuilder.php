@@ -3598,10 +3598,12 @@ function ppb_blog_minimal_func($atts, $content) {
 			$values = get_post_custom( $ppb_post->ID );
 		    $event_cost = isset( $values['event_cost'] ) ? $values['event_cost'][0] : '';
 		    $event_date = isset( $values['event_date'] ) ? $values['event_date'][0] : '';
+		    $event_details = isset( $values['event_details'] ) ? $values['event_details'][0] : '';
 			
 			$return_html.= '<div class="content">';
 			$return_html.= '<h4>'.get_the_title($ppb_post->ID).'</h4>';
-			$return_html.= '<div class="post_detail" style="bottom: 20px;">' . $event_cost . '</div>';
+			$return_html.= '<div class="post_detail" style="bottom: 40px;">' . $event_cost . '</div>';
+			$return_html.= '<div class="post_detail" style="bottom: 20px;">' . $event_details . '</div>';
 			$return_html.= '<div class="post_detail">' . $event_date . '</div>';
 		    $return_html.= '</div>';
 		    $return_html.= '</div>';
