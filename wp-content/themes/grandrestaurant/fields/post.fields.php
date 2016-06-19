@@ -7,7 +7,7 @@ add_action( 'add_meta_boxes_post', 'post_add_meta_boxes' );
 // The function that provides the form fields for the Event Information metabox.
 function post_display_event_information_callback( $post ) {
     $values = get_post_custom( $post->ID );
-    $event_price = isset( $values['event_price'] ) ? $values['event_price'][0] : '';
+    $event_cost = isset( $values['event_cost'] ) ? $values['event_cost'][0] : '';
     $event_date = isset( $values['event_date'] ) ? $values['event_date'][0] : '';
     wp_nonce_field( 'my_display_event_meta_box_nonce', 'display_event_meta_box_nonce' );
     ?>
@@ -28,9 +28,6 @@ function post_display_event_information_callback( $post ) {
 function post_event_fields_save( $post_id ) {
     // Bail if we're doing an auto save.
     if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
-
-    // If our nonce isn't there, or we can't verify it, bail.
-    if ( !isset( $_POST['display_event_meta_box_nonce'] ) || !wp_verify_nonce( $_POST['display_event_meta_box_nonce'], 'my_meta_box_nonce' ) ) return;
 
     // If our current user can't edit this post, bail.
     if ( !current_user_can( 'edit_posts' ) ) return;
