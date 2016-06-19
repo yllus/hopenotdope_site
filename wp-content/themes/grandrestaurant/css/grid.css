@@ -698,8 +698,8 @@
   	.ppb_fullwidth_button h2.title { float: none; width: 100%; }
   	.ppb_fullwidth_button .button { float: none; margin-top: 10px; }
   	.tg_stats { margin-left: -8%; }
-  	h2.ppb_title { font-size: 50px !important; line-height: 40px; letter-spacing: -1px; }
-  	h2.ppb_title .ppb_title_first, .ppb_title_first { font-size: 40px; }
+  	h2.ppb_title { font-size: 40px !important; line-height: 35px; letter-spacing: -1px; }
+  	h2.ppb_title .ppb_title_first, .ppb_title_first { font-size: 70px !important; line-height: 59px; }
   	#footer_before_widget_text { width: 85%; }
   	#toTop { right: 17px; }
   	.portfolio_filter_dropdown .portfolio_filter_dropdown_title a span { padding-right: 1.5em; }
