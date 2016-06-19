@@ -6607,6 +6607,11 @@ body.hover .page_slider .tp-leftarrow.default:hover, body.hover .page_slider .tp
 	color: #fff;
 }
 
+.ppb_blog_minimal .one_third_bg .blog_minimal_wrapper .content .post_detail
+{
+	color: #fff;
+}
+
 .ppb_blog_minimal .one_third_bg:hover .blog_minimal_wrapper .content, .ppb_blog_minimal .one_third_bg:hover .blog_minimal_wrapper .content h4
 {
 	color: #fff !important;
