@@ -154,7 +154,7 @@
 			    		if(!empty($pp_youtube_url))
 			    		{
 			    	?>
-			    	<li class="youtube"><a <?php if(!empty($tg_footer_social_link)) { ?>target="_blank"<?php } ?> title="Youtube" href="http://youtube.com/channel/<?php echo esc_attr($pp_youtube_url); ?>"><i class="fa fa-youtube"></i></a></li>
+			    	<li class="youtube"><a <?php if(!empty($tg_footer_social_link)) { ?>target="_blank"<?php } ?> title="Youtube" href="<?php echo esc_attr($pp_youtube_url); ?>"><i class="fa fa-youtube"></i></a></li>
 			    	<?php
 			    		}
 			    	?>
