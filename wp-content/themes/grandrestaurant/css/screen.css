@@ -7475,6 +7475,13 @@ body.hover .page_slider .tp-leftarrow.default:hover, body.hover .page_slider .tp
 	opacity: 1;
 }
 
+@media only screen and (max-width: 768px) {
+	.four_cols.gallery .element .portfolio_desc.grid_image {
+		top: 0;
+		opacity: 1;
+	}
+}
+
 .grid_image_frame
 {
 	width: 100%;

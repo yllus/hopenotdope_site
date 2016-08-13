@@ -536,7 +536,7 @@
 	.portfolio_desc.portfolio3 { float: none; width: 100%; margin: 0; padding: 10px 10px 20px 10px; box-sizing: border-box; }
 	.portfolio_desc.portfolio3 h5 { font-size: 16px; }
 	
-	.portfolio_desc.portfolio4 { display: none; }
+	/* .portfolio_desc.portfolio4 { display: none; } */
 	
 	#page_content_wrapper .inner .sidebar_content.full_width.portfolio3_content_wrapper, #page_content_wrapper .inner .sidebar_content.full_width.portfolio4_content_wrapper { width: 300px; }
 	.one_third.portfolio3_wrapper, .one_fourth.portfolio4_wrapper { width: 100%; clear: both; }
