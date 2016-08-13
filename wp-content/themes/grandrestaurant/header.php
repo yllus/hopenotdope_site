@@ -346,14 +346,14 @@ if(is_single())
 			    $page_menu = get_post_meta($post->ID, 'page_menu', true);
 			}	
 			
-			if ( has_nav_menu( 'side-menu' ) ) 
+			if ( has_nav_menu( 'primary-menu' ) ) 
 			{
 			    //Get page nav
 			    wp_nav_menu( 
 			        array( 
-			            'menu_id'			=> 'mobile_main_menu',
+			            'menu_id'			=> 'primary-menu',
 		                'menu_class'		=> 'mobile_main_nav',
-			            'theme_location' 	=> 'side-menu',
+			            'theme_location' 	=> 'primary-menu',
 			        )
 			    ); 
 			}
