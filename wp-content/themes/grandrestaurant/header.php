@@ -367,7 +367,7 @@ if(is_single())
 		    if(!empty($pp_reservation_email))
 		    {
 		?>
-		<a href="javascript:;" id="tg_sidemenu_reservation" class="button"><?php _e( 'Reservation', THEMEDOMAIN ); ?></a>
+		<a href="javascript:;" id="tg_sidemenu_reservation" class="button"><?php _e( 'Book Consultation', THEMEDOMAIN ); ?></a>
 		<?php
 		    }
 		?>

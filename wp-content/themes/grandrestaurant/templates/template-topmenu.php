@@ -274,7 +274,7 @@ elseif(is_home())
 		    		if(!empty($pp_reservation_email))
 		    		{
 		    	?>
-		    	<a href="javascript:;" id="tg_reservation" class="button"><?php _e( 'Reservation', THEMEDOMAIN ); ?></a>
+		    	<a href="javascript:;" id="tg_reservation" class="button"><?php _e( 'Book Consultation', THEMEDOMAIN ); ?></a>
 		    	<?php
 		    		}
 		    	?>
@@ -382,7 +382,7 @@ elseif(is_home())
 			<div class="reservation_form_wrapper">
 				<a id="reservation_cancel_btn" href="javascript:;"><i class="fa fa-close"></i></a>
 			
-				<h2 class="ppb_title"><?php echo tg_get_first_title_word(__( "Table Booking", THEMEDOMAIN )); ?></h2>
+				<h2 class="ppb_title"><?php echo tg_get_first_title_word(__( "Book Consultation", THEMEDOMAIN )); ?></h2>
 				<div id="reponse_msg"><ul></ul></div>
 				
 				<form id="tg_reservation_form" method="post">
@@ -410,41 +410,15 @@ elseif(is_home())
 						<input type="text" class="pp_date required_field" id="date" name="date" value="<?php echo date('m/d/Y'); ?>">
 					</div>
 					
-					<div class="one_third">
+					<div class="one_third last">
 						<label for="time"><?php echo _e( 'Time*', THEMEDOMAIN ); ?></label>
 						<input type="text" class="pp_time required_field" id="time" name="time" value="18:00"/>
-					</div>
-					
-					<div class="one_third last">
-						<label for="seats"><?php echo _e( 'Seats*', THEMEDOMAIN ); ?></label>
-				        <select id="seats" name="seats" class="required_field" style="width:99%">
-				        	<?php
-				        		for ($i = 1; $i < 21 ; $i++) {
-				        			$option_title = $i;
-				        			if($i==1)
-				        			{
-					        			$option_title.=  ' '.__( 'person', THEMEDOMAIN );
-				        			}
-				        			elseif($i<20)
-				        			{
-					        			$option_title.=  ' '.__( 'people', THEMEDOMAIN );
-				        			}
-				        			else
-				        			{
-					        			$option_title.=  '+ '.__( 'people', THEMEDOMAIN );
-				        			}
-				        	?>
-				        		<option value="<?php echo esc_attr($i); ?>"><?php echo esc_html($option_title); ?></option>
-				        	<?php
-				        		}
-				        	?>
-				        </select>
 					</div>
 					
 					<br class="clear"/><br/>
 					
 					<div class="one">
-						<label for="message"><?php echo _e( 'Special Requests', THEMEDOMAIN ); ?></label>
+						<label for="message"><?php echo _e( 'Additional Information', THEMEDOMAIN ); ?></label>
 					    <textarea id="message" name="message" rows="7" cols="10"></textarea>
 					</div>
 					
