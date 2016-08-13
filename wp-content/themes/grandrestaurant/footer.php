@@ -273,7 +273,7 @@
 
 	        if(!empty($tg_footer_copyright_text))
 	        {
-	        	echo '<div id="copyright">'.wp_kses_post(htmlspecialchars_decode($tg_footer_copyright_text)).'</div><br class="clear"/>';
+	        	echo '<div id="copyright">'.wp_kses_post(htmlspecialchars_decode($tg_footer_copyright_text)).'</div><br class="clear"/><div style="text-align: center; color: #cfa670; font-weight: normal;">Copyright HOPE Health ' . date('Y') . '</div>';
 	        }
 	    ?>
 	    
