@@ -223,7 +223,8 @@ jQuery(document).ready(function(){
 			jQuery('#menu_expand_wrapper a').trigger('click');
 		}
 	});
-	
+
+	/*	
 	var isDisableRightClick = jQuery('#pp_enable_right_click').val();
 	
 	if(isDisableRightClick!='')
@@ -232,6 +233,7 @@ jQuery(document).ready(function(){
 	    	e.preventDefault();
 	    });
 	}
+	*/
 	
 	function rePortfolioLayout() {
 	
