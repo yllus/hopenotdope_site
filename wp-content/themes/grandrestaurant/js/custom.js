@@ -482,8 +482,8 @@ jQuery(document).ready(function(){
 			if(jQuery('#pp_fixed_menu').val()==1)
 			{
 				if(jQuery(this).scrollTop() >= 200){
-					jQuery('.header_style_wrapper .above_top_bar').hide();
-					jQuery('.extend_top_contact_info').hide();
+					//jQuery('.header_style_wrapper .above_top_bar').hide();
+					//jQuery('.extend_top_contact_info').hide();
 					
 					if(jQuery(window).width()>=1024)
 					{
@@ -524,8 +524,8 @@ jQuery(document).ready(function(){
 			    }
 			    else if(jQuery(this).scrollTop() < 200)
 			    {
-			    	jQuery('.header_style_wrapper .above_top_bar').show();
-			    	jQuery('.extend_top_contact_info').show();
+			    	//jQuery('.header_style_wrapper .above_top_bar').show();
+			    	//jQuery('.extend_top_contact_info').show();
 				    
 				    jQuery('.top_bar').removeClass('scroll');
 				    jQuery('.top_bar').css('height', topBarHeight+'px');
